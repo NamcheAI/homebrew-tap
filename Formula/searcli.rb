@@ -1,8 +1,9 @@
 class Searcli < Formula
   desc "Read-only Google Search Console CLI"
   homepage "https://github.com/namcheai/searcli"
-  version "0.1.0"
   license "MIT"
+
+  depends_on :macos
 
   on_macos do
     on_arm do
@@ -14,7 +15,6 @@ class Searcli < Formula
       sha256 "6eac641d1720aa97a8a5ae7bb5a30409f47da84bd85ab47af869c19d3a4ae0b9"
     end
   end
-  depends_on :macos
 
   def install
     bin.install "searcli"
